@@ -1,91 +1,112 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Manchester United Fan Site</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Home | Manchester United Fan Site</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      background: #e9e9e9;
+      color: #111;
+    }
 
-<style>
-body{
-font-family: Arial, sans-serif;
-margin:0;
-background:#f4f4f4;
-}
+    header {
+      background: #d40000;
+      color: white;
+      text-align: center;
+      padding: 30px 20px;
+    }
 
-header{
-background:#c70101;
-color:white;
-text-align:center;
-padding:20px;
-}
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin: 0 14px;
+      font-weight: bold;
+      font-size: 18px;
+    }
 
-nav a{
-color:white;
-margin:0 10px;
-text-decoration:none;
-font-weight:bold;
-}
+    nav a:hover {
+      text-decoration: underline;
+    }
 
-main{
-max-width:900px;
-margin:auto;
-padding:20px;
-background:white;
-}
+    main {
+      max-width: 1000px;
+      margin: 30px auto;
+      background: #f5f5f5;
+      padding: 30px;
+    }
 
-img{
-width:100%;
-border-radius:8px;
-}
+    img {
+      max-width: 100%;
+      height: auto;
+      display: block;
+      margin: 0 auto 20px;
+    }
 
-footer{
-text-align:center;
-background:#111;
-color:white;
-padding:15px;
-margin-top:20px;
-}
-</style>
+    h2 {
+      font-size: 28px;
+      margin-top: 10px;
+    }
 
+    p {
+      font-size: 18px;
+      line-height: 1.6;
+    }
+
+    footer {
+      background: #111;
+      color: white;
+      text-align: center;
+      padding: 25px 15px;
+      margin-top: 30px;
+    }
+
+    @media (max-width: 768px) {
+      nav a {
+        display: inline-block;
+        margin: 8px 10px;
+        font-size: 17px;
+      }
+
+      main {
+        margin: 15px;
+        padding: 20px;
+      }
+    }
+  </style>
 </head>
-
 <body>
 
-<header>
-<h1>Manchester United Fan Site</h1>
+  <header>
+    <h1>Manchester United Fan Site</h1>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="history.html">History</a>
+      <a href="legends.html">Legends</a>
+      <a href="trophies.html">Trophies</a>
+      <a href="gallery.html">Gallery</a>
+    </nav>
+  </header>
 
-<nav>
-<a href="index.html">Home</a>
-<a href="history.html">History</a>
-<a href="players.html">Players</a>
-<a href="trophies.html">Trophies</a>
-<a href="gallery.html">Gallery</a>
-</nav>
-</header>
+  <main>
+    <img src="manchester-united-logo.png" alt="Manchester United Logo" width="320">
 
-<main>
+    <h2>Welcome to Manchester United</h2>
 
-<img src="images/manchester-united-logo.png" alt="Manchester United Logo">
+    <p>
+      Manchester United is one of the most famous football clubs in the world. Founded in 1878, the club has a rich history filled with legendary players, major trophies, and passionate fans from around the globe.
+    </p>
 
-<h2>Welcome to Manchester United</h2>
+    <p>
+      This website explores the history of Manchester United, some of its most iconic legends, the trophies the club has won, and a gallery of images celebrating the team.
+    </p>
+  </main>
 
-<p>
-Manchester United is one of the most famous football clubs in the world.
-Founded in 1878, the club has a rich history filled with legendary players,
-major trophies, and passionate fans from around the globe.
-</p>
-
-<p>
-This website explores the history of Manchester United, some of its most
-iconic players, the trophies the club has won, and a gallery of images
-celebrating the team.
-</p>
-
-</main>
-
-<footer>
-<p>Manchester United Fan Website | Created for Web Development Class</p>
-</footer>
+  <footer>
+    <p>Manchester United Fan Website | Created for Web Development Class</p>
+  </footer>
 
 </body>
 </html>
