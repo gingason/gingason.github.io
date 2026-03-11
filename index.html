@@ -16,7 +16,12 @@
       background: #d40000;
       color: white;
       text-align: center;
-      padding: 30px 20px;
+      padding: 25px 20px;
+    }
+
+    header h1 {
+      margin: 0 0 15px;
+      font-size: 36px;
     }
 
     nav a {
@@ -31,28 +36,118 @@
       text-decoration: underline;
     }
 
+    .hero {
+      background: linear-gradient(rgba(0, 0, 0, 0.55), rgba(0, 0, 0, 0.55)),
+                  url("old-trafford.jpg") center/cover no-repeat;
+      color: white;
+      text-align: center;
+      padding: 100px 20px;
+    }
+
+    .hero h2 {
+      font-size: 48px;
+      margin-bottom: 15px;
+    }
+
+    .hero p {
+      font-size: 22px;
+      max-width: 700px;
+      margin: 0 auto;
+      line-height: 1.6;
+    }
+
     main {
-      max-width: 1000px;
+      max-width: 1100px;
       margin: 30px auto;
       background: #f5f5f5;
       padding: 30px;
+      box-sizing: border-box;
     }
 
-    img {
-      max-width: 100%;
+    .intro {
+      text-align: center;
+      margin-bottom: 40px;
+    }
+
+    .intro img {
+      max-width: 220px;
       height: auto;
       display: block;
       margin: 0 auto 20px;
     }
 
-    h2 {
-      font-size: 28px;
-      margin-top: 10px;
+    .intro h2 {
+      font-size: 30px;
+      margin-bottom: 15px;
+      color: #b30000;
     }
 
-    p {
+    .intro p {
       font-size: 18px;
+      line-height: 1.7;
+      max-width: 850px;
+      margin: 0 auto 15px;
+    }
+
+    .section-title {
+      text-align: center;
+      font-size: 30px;
+      margin: 50px 0 25px;
+      color: #b30000;
+    }
+
+    .cards {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 20px;
+    }
+
+    .card {
+      background: white;
+      padding: 20px;
+      border-left: 6px solid #d40000;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+    }
+
+    .card h3 {
+      margin-top: 0;
+      color: #111;
+      font-size: 24px;
+    }
+
+    .card p {
+      font-size: 17px;
       line-height: 1.6;
+    }
+
+    .card a {
+      color: #b30000;
+      font-weight: bold;
+      text-decoration: none;
+    }
+
+    .card a:hover {
+      text-decoration: underline;
+    }
+
+    .facts {
+      background: #ffffff;
+      padding: 25px;
+      margin-top: 40px;
+      border-top: 5px solid #d40000;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+    }
+
+    .facts h3 {
+      margin-top: 0;
+      color: #b30000;
+      font-size: 26px;
+    }
+
+    .facts ul {
+      padding-left: 22px;
+      font-size: 18px;
+      line-height: 1.8;
     }
 
     footer {
@@ -63,6 +158,11 @@
       margin-top: 30px;
     }
 
+    footer p {
+      margin: 6px 0;
+      font-size: 16px;
+    }
+
     @media (max-width: 768px) {
       nav a {
         display: inline-block;
@@ -70,9 +170,30 @@
         font-size: 17px;
       }
 
+      .hero {
+        padding: 70px 20px;
+      }
+
+      .hero h2 {
+        font-size: 34px;
+      }
+
+      .hero p {
+        font-size: 18px;
+      }
+
       main {
         margin: 15px;
         padding: 20px;
+      }
+
+      .cards {
+        grid-template-columns: 1fr;
+      }
+
+      .intro h2,
+      .section-title {
+        font-size: 26px;
       }
     }
   </style>
@@ -90,22 +211,71 @@
     </nav>
   </header>
 
+  <section class="hero">
+    <h2>Glory, History, and Legendary Moments</h2>
+    <p>
+      Explore the story of Manchester United, from its rich history and iconic players
+      to its greatest trophies and unforgettable moments.
+    </p>
+  </section>
+
   <main>
-    <img src="manchester-united-logo.png" alt="Manchester United Logo" width="320">
+    <section class="intro">
+      <img src="manchester-united-logo.png" alt="Manchester United Logo">
+      <h2>Welcome to Manchester United</h2>
+      <p>
+        Manchester United is one of the most famous football clubs in the world. Founded in 1878,
+        the club has built a global reputation through legendary players, historic victories,
+        and a passionate fanbase.
+      </p>
+      <p>
+        This website celebrates the club by exploring its history, famous legends, major trophies,
+        and memorable images that represent the spirit of Manchester United.
+      </p>
+    </section>
 
-    <h2>Welcome to Manchester United</h2>
+    <h2 class="section-title">Explore the Club</h2>
 
-    <p>
-      Manchester United is one of the most famous football clubs in the world. Founded in 1878, the club has a rich history filled with legendary players, major trophies, and passionate fans from around the globe.
-    </p>
+    <section class="cards">
+      <div class="card">
+        <h3>History</h3>
+        <p>Learn about the origins of Manchester United and the key events that shaped the club.</p>
+        <a href="history.html">Visit the History Page</a>
+      </div>
 
-    <p>
-      This website explores the history of Manchester United, some of its most iconic legends, the trophies the club has won, and a gallery of images celebrating the team.
-    </p>
+      <div class="card">
+        <h3>Legends</h3>
+        <p>Discover the players and managers who became icons in Manchester United history.</p>
+        <a href="legends.html">Visit the Legends Page</a>
+      </div>
+
+      <div class="card">
+        <h3>Trophies</h3>
+        <p>Explore the club’s success through the many league titles, cups, and European honors it has won.</p>
+        <a href="trophies.html">Visit the Trophies Page</a>
+      </div>
+
+      <div class="card">
+        <h3>Gallery</h3>
+        <p>View a collection of images celebrating Manchester United’s players, stadium, and achievements.</p>
+        <a href="gallery.html">Visit the Gallery Page</a>
+      </div>
+    </section>
+
+    <section class="facts">
+      <h3>Did You Know?</h3>
+      <ul>
+        <li>Manchester United was founded in 1878 as Newton Heath.</li>
+        <li>Old Trafford is famously known as “The Theatre of Dreams.”</li>
+        <li>The club is one of the most successful and widely supported football teams in the world.</li>
+      </ul>
+    </section>
   </main>
 
   <footer>
-    <p>Manchester United Fan Website | Created for Web Development Class</p>
+    <p>Manchester United Fan Website</p>
+    <p>Created by [Your Name]</p>
+    <p>Web Development Class – Draft Version</p>
   </footer>
 
 </body>
