@@ -16,7 +16,11 @@
       background: #d40000;
       color: white;
       text-align: center;
-      padding: 30px 20px;
+      padding: 25px 20px;
+    }
+
+    header h1 {
+      margin: 0 0 15px;
     }
 
     nav a {
@@ -36,22 +40,78 @@
       margin: 30px auto;
       background: #f5f5f5;
       padding: 30px;
+      box-sizing: border-box;
     }
 
-    img {
+    .page-title {
+      text-align: center;
+      color: #b30000;
+      font-size: 32px;
+      margin-bottom: 10px;
+    }
+
+    .intro-text {
+      text-align: center;
+      font-size: 18px;
+      line-height: 1.6;
+      max-width: 800px;
+      margin: 0 auto 30px;
+    }
+
+    .main-image {
       max-width: 100%;
       height: auto;
       display: block;
-      margin: 0 auto 20px;
+      margin: 0 auto 25px;
+      border: 4px solid #d40000;
     }
 
-    h2 {
+    .section {
+      margin-bottom: 30px;
+      background: white;
+      padding: 20px;
+      border-left: 5px solid #d40000;
+    }
+
+    .section h2 {
+      margin-top: 0;
+      color: #b30000;
+      font-size: 26px;
+    }
+
+    .section p {
+      font-size: 18px;
+      line-height: 1.6;
+    }
+
+    .timeline {
+      margin-top: 40px;
+      background: white;
+      padding: 20px;
+      border-top: 5px solid #d40000;
+    }
+
+    .timeline h2 {
+      margin-top: 0;
+      color: #b30000;
       font-size: 28px;
     }
 
-    p {
+    .timeline-item {
+      margin-bottom: 18px;
+      padding-bottom: 12px;
+      border-bottom: 1px solid #ccc;
+    }
+
+    .timeline-item:last-child {
+      border-bottom: none;
+      margin-bottom: 0;
+      padding-bottom: 0;
+    }
+
+    .timeline-item strong {
+      color: #111;
       font-size: 18px;
-      line-height: 1.6;
     }
 
     footer {
@@ -60,6 +120,10 @@
       text-align: center;
       padding: 25px 15px;
       margin-top: 30px;
+    }
+
+    footer p {
+      margin: 6px 0;
     }
 
     @media (max-width: 768px) {
@@ -72,6 +136,21 @@
       main {
         margin: 15px;
         padding: 20px;
+      }
+
+      .page-title {
+        font-size: 28px;
+      }
+
+      .section h2,
+      .timeline h2 {
+        font-size: 24px;
+      }
+
+      .section p,
+      .intro-text,
+      .timeline-item {
+        font-size: 17px;
       }
     }
   </style>
@@ -90,29 +169,77 @@
   </header>
 
   <main>
-    <h2>History of Manchester United</h2>
+    <h1 class="page-title">History of Manchester United</h1>
 
-    <img src="manchester-united-history.png" alt="Historic Manchester United team">
-
-    <p>
-      Manchester United was founded in 1878 under the name Newton Heath LYR Football Club. The club was formed by workers from the Lancashire and Yorkshire Railway depot.
+    <p class="intro-text">
+      Manchester United has one of the richest histories in football. From its early beginnings as Newton Heath
+      to becoming one of the most famous clubs in the world, the team has built a legacy full of change,
+      success, and unforgettable moments.
     </p>
 
-    <p>
-      In 1902, the club changed its name to Manchester United after facing financial difficulties. New ownership helped rebuild the club and began a new era in its history.
-    </p>
+    <img src="manchester-united-history.png" alt="Historic Manchester United team" class="main-image">
 
-    <p>
-      Manchester United plays its home matches at Old Trafford, one of the most famous football stadiums in the world. The stadium has been the home of the club since 1910 and is often called the "Theatre of Dreams."
-    </p>
+    <section class="section">
+      <h2>The Beginning</h2>
+      <p>
+        Manchester United was founded in 1878 under the name Newton Heath LYR Football Club. The team was created
+        by workers from the Lancashire and Yorkshire Railway depot. In its early years, the club played local matches
+        and slowly began to grow in popularity.
+      </p>
+    </section>
 
-    <p>
-      Throughout its history, Manchester United has been known for attacking football, developing young players, and achieving success in English and European competitions.
-    </p>
+    <section class="section">
+      <h2>A New Name</h2>
+      <p>
+        In 1902, the club faced serious financial problems and nearly disappeared. After new investment and new
+        leadership, the club was saved and renamed Manchester United. This marked the beginning of a new chapter
+        and helped shape the club’s future identity.
+      </p>
+    </section>
+
+    <section class="section">
+      <h2>Old Trafford</h2>
+      <p>
+        Manchester United has played at Old Trafford since 1910. The stadium is one of the most famous football
+        grounds in the world and is often called the "Theatre of Dreams." It has become an important symbol of
+        the club’s history and global reputation.
+      </p>
+    </section>
+
+    <section class="section">
+      <h2>Club Identity</h2>
+      <p>
+        Throughout its history, Manchester United has been known for attacking football, exciting young players,
+        and success in both English and European competitions. The club’s style, tradition, and worldwide fanbase
+        have made it one of the most recognized teams in sport.
+      </p>
+    </section>
+
+    <section class="timeline">
+      <h2>Quick Timeline</h2>
+
+      <div class="timeline-item">
+        <strong>1878:</strong> The club was founded as Newton Heath LYR Football Club.
+      </div>
+
+      <div class="timeline-item">
+        <strong>1902:</strong> The club changed its name to Manchester United.
+      </div>
+
+      <div class="timeline-item">
+        <strong>1910:</strong> Manchester United moved to Old Trafford.
+      </div>
+
+      <div class="timeline-item">
+        <strong>Today:</strong> Manchester United is one of the most famous football clubs in the world.
+      </div>
+    </section>
   </main>
 
   <footer>
-    <p>Manchester United Fan Website | Created for Web Development Class</p>
+    <p>Manchester United Fan Website</p>
+    <p>Created by Gudmundur Thor Ingason</p>
+    <p>Web Development Class — Draft Version</p>
   </footer>
 
 </body>
