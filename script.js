@@ -28,5 +28,5 @@ function showFanMessage() {
   const specialMessage = document.getElementById("specialMessage");
 
   specialMessage.textContent =
-    "Manchester United is more than a club — it is history, passion, and tradition.";
+    "Manchester United is more than a club. It is history, passion, and tradition.";
 }
