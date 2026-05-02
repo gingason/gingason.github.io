@@ -44,16 +44,6 @@ function checkAnswer(answer) {
   }
 }
 
-
-function playCrowdSound() {
-  const audio = document.getElementById("crowdAudio");
-
-  if (audio) {
-    audio.play();
-  }
-}
-
-
 const counters = document.querySelectorAll(".counter");
 
 counters.forEach(function (counter) {
