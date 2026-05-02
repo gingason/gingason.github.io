@@ -30,3 +30,47 @@ function showFanMessage() {
   specialMessage.textContent =
     "Manchester United is more than a club. It is history, passion, and tradition.";
 }
+
+function checkAnswer(answer) {
+  const quizMessage = document.getElementById("quizMessage");
+
+  if (answer === "correct") {
+    quizMessage.textContent =
+      "Correct! Manchester United was founded as Newton Heath in 1878.";
+    quizMessage.style.color = "green";
+  } else {
+    quizMessage.textContent = "Not quite — try again!";
+    quizMessage.style.color = "red";
+  }
+}
+
+
+function playCrowdSound() {
+  const audio = document.getElementById("crowdAudio");
+
+  if (audio) {
+    audio.play();
+  }
+}
+
+
+const counters = document.querySelectorAll(".counter");
+
+counters.forEach(function (counter) {
+  counter.innerText = "0";
+
+  function updateCounter() {
+    const target = Number(counter.getAttribute("data-target"));
+    const current = Number(counter.innerText);
+    const increment = Math.ceil(target / 50);
+
+    if (current < target) {
+      counter.innerText = current + increment;
+      setTimeout(updateCounter, 40);
+    } else {
+      counter.innerText = target;
+    }
+  }
+
+  updateCounter();
+});
