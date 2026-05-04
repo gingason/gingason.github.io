@@ -39,7 +39,7 @@ function checkAnswer(answer) {
       "Correct! Manchester United was founded as Newton Heath in 1878.";
     quizMessage.style.color = "green";
   } else {
-    quizMessage.textContent = "Not quite — try again!";
+    quizMessage.textContent = "Not quite, try again!";
     quizMessage.style.color = "red";
   }
 }
